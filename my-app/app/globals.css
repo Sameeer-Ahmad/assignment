@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  .roadmap {
+    background: rgba(0, 0, 0, 0.87)
+      url("https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jjLcTC3sH3GYbn7re~tH~Nmk1RGHp0R2VmCRcND3C-8~YPtYnKAGwtoRrge6hYpDbiEEjiFS81-GaSkT9E76UPQCb4SI0grIdfxU29vpK3Nqaw3KTU9AUYdwPxjbJzc7JXd5ipQuYTNdD6Y2p-AnWzv8tKVcVhhSBIf1F0BAqao09vOZw5RiVvKueL5m7-qEVbVm4ybeFvPo9Vnoi9ZLk7eWw5E5fLY1Ifd0lWW5htWnhDegKifYhgbKJu-gqjs2ifZNVPGt-qVomH1ScrUAOF69Urdxi83gjySJ89JzuYFalMH-qwUJifSgv3Hn2A961XxqppCaW1mW7Onyc4AzBg__");
+    background-blend-mode: darken;
+  }
+  .tokenomic{
+    background: rgba(0, 0, 0, 0.87)
+    url("https://s3-alpha-sig.figma.com/img/c869/1086/fe977eb60a56b9a690490c109cbb1a69?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WNtglA2Gz2epU-1a2Ozh30fZewTYeQXla3H0u-elayvseL80rZ2~KMi1DbHEhy0-1uZqXcGGventbMstH91zqKLJbs7dFoMP~FkyBmSA9RrwZTa5cAUsZXk6PNOvKUkHE6X5xbySw34QukmRk28lx6JDTIYh9c1QeZrh-0vbn6Kqbid-8EstrOgAS7ptSkVksx5Gd-bsAKHj0IMG7P3f51CoyfY6xvDzF2bUJvZvBeoPRocdnkwfqOA2xDIF3894egqBnGI65r7xaKLmEvnSjeF4HIc4PfA1Bxy54ipI4QI9pjN9gehokkP25JntOm0iuGfBj0mq0NdLFZuKfZBMPA__");
+    background-blend-mode: darken;
+  }
+}
